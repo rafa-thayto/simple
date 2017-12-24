@@ -5,9 +5,9 @@
             user-select: $param;
 }
 
-@mixin transition($time, $timing-function) {
-    -webkit-transition: all $time $timing-function;
-       -moz-transition: all $time $timing-function;
-         -o-transition: all $time $timing-function;
-            transition: all $time $timing-function;
+@mixin transition($type ,$time, $timing-function) {
+    -webkit-transition: $type $time $timing-function;
+       -moz-transition: $type $time $timing-function;
+         -o-transition: $type $time $timing-function;
+            transition: $type $time $timing-function;
 }

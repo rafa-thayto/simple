@@ -21,29 +21,34 @@
   text-align: center;
   font-weight: 400;
   font-size: 1rem;
+  background-color: #FAFAFA;
+  border: 1px solid transparent;
+  border-radius: .35rem;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  border: 1px solid transparent;
-  border-radius: .35rem;
-  -webkit-transition: all 0.175 ease-in-out;
-  -moz-transition: all 0.175 ease-in-out;
-  -o-transition: all 0.175 ease-in-out;
-  transition: all 0.175 ease-in-out; }
-  .btn.primary {
+  -webkit-transition: all 0.125s ease-in-out;
+  -moz-transition: all 0.125s ease-in-out;
+  -o-transition: all 0.125s ease-in-out;
+  transition: all 0.125s ease-in-out; }
+  .btn.btn-primary {
     color: #FAFAFA;
     background-color: #007BFF; }
-    .btn.primary:active, .btn.primary:focus {
+    .btn.btn-primary:active, .btn.btn-primary:focus {
       box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); }
-    .btn.primary:active {
+    .btn.btn-primary:hover {
       background-color: #006fe6; }
-  .btn.secundary {
+      .btn.btn-primary:hover:active {
+        background-color: #0062cc; }
+  .btn.btn-secundary {
     color: #FAFAFA;
     background-color: #7C4DFF; }
-    .btn.secundary:active, .btn.secundary:focus {
+    .btn.btn-secundary:active, .btn.btn-secundary:focus {
       box-shadow: 0 0 0 0.2rem rgba(124, 77, 255, 0.5); }
-    .btn.secundary:active {
+    .btn.btn-secundary:hover {
       background-color: #6934ff; }
+      .btn.btn-secundary:hover:active {
+        background-color: #561aff; }
 
 /*# sourceMappingURL=simple.css.map */

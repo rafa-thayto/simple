@@ -13,29 +13,36 @@ $white : #FAFAFA;
     text-align: center;
     font-weight: 400;
     font-size: 1rem;
-    @include user-select();
+    background-color: $white;
     border: 1px solid transparent;
     border-radius: .35rem;
-    @include transition(.175, ease-in-out);
+    @include user-select();
+    @include transition(all, .125s, ease-in-out);
 
-    &.primary {
+    &.btn-primary {
         color: $white;
         background-color: $primary;
         &:active, &:focus {
             box-shadow: 0 0 0 .2rem rgba($primary,.5);
         }
-        &:active {
+        &:hover {
+            &:active {
+                background-color: darken($primary, 10%);
+            }
             background-color: darken($primary, 5%);
         }
     }
-    
-    &.secundary {
+
+    &.btn-secundary {
         color: $white;
         background-color: $secundary;
         &:active, &:focus {
             box-shadow: 0 0 0 .2rem rgba($secundary, .5);
         }
-        &:active {
+        &:hover {
+            &:active {
+                background-color: darken($secundary, 10%);
+            }
             background-color: darken($secundary, 5%);
         }
     }
