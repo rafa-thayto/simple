@@ -1,20 +1,49 @@
-/* Reset */
+/*!
+ * Simple v0.1.0
+ * Copyright 18/12/2017 
+ * Licensed under MIT (https://github.com/rafa-thayto/simple/blob/master/LICENSE)
+ */
 *,
 *::after,
 *::before {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	list-style: none;
-	vertical-align: baseline;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  vertical-align: baseline;
+  font-size: 100%; }
 
-/* End Reset */
-
-/* buttons */
 .btn {
-	padding: 0.5rem 0.75em;
-	background-color: #EEEEEE;
-	border-radius: 0.35rem;
-	border: 1px solid #F5F5F5;
-}
+  display: inline-block;
+  margin: .25rem .5rem;
+  padding: .5rem .75rem;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  border-radius: .35rem;
+  -webkit-transition: all 0.175 ease-in-out;
+  -moz-transition: all 0.175 ease-in-out;
+  -o-transition: all 0.175 ease-in-out;
+  transition: all 0.175 ease-in-out; }
+  .btn.primary {
+    color: #FAFAFA;
+    background-color: #007BFF; }
+    .btn.primary:active, .btn.primary:focus {
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); }
+    .btn.primary:active {
+      background-color: #006fe6; }
+  .btn.secundary {
+    color: #FAFAFA;
+    background-color: #7C4DFF; }
+    .btn.secundary:active, .btn.secundary:focus {
+      box-shadow: 0 0 0 0.2rem rgba(124, 77, 255, 0.5); }
+    .btn.secundary:active {
+      background-color: #6934ff; }
+
+/*# sourceMappingURL=simple.css.map */

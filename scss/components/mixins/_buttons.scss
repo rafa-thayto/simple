@@ -1,0 +1,13 @@
+@mixin user-select($param: none) {
+    -webkit-user-select: $param;
+       -moz-user-select: $param;
+        -ms-user-select: $param;
+            user-select: $param;
+}
+
+@mixin transition($time, $timing-function) {
+    -webkit-transition: all $time $timing-function;
+       -moz-transition: all $time $timing-function;
+         -o-transition: all $time $timing-function;
+            transition: all $time $timing-function;
+}
