@@ -1,0 +1,50 @@
+@import "mixins/_buttons.scss";
+
+$primary : #007BFF;
+$secundary : #7C4DFF;
+$white : #FAFAFA;
+
+
+.btn {
+    display: inline-block;
+    margin: .25rem .5rem;
+    padding: .5rem .75rem;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1rem;
+    background-color: $white;
+    border: 1px solid transparent;
+    border-radius: .35rem;
+    @include user-select();
+    @include transition(all, .125s, ease-in-out);
+
+    &.btn-primary {
+        color: $white;
+        background-color: $primary;
+        &:active, &:focus {
+            box-shadow: 0 0 0 .2rem rgba($primary,.5);
+        }
+        &:hover {
+            &:active {
+                background-color: darken($primary, 10%);
+            }
+            background-color: darken($primary, 5%);
+        }
+    }
+
+    &.btn-secundary {
+        color: $white;
+        background-color: $secundary;
+        &:active, &:focus {
+            box-shadow: 0 0 0 .2rem rgba($secundary, .5);
+        }
+        &:hover {
+            &:active {
+                background-color: darken($secundary, 10%);
+            }
+            background-color: darken($secundary, 5%);
+        }
+    }
+    
+}

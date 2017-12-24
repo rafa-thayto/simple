@@ -1,2 +1,2 @@
-# simple
-Simple, CSS framework
+# Simple
+## _Simple_, CSS framework.

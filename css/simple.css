@@ -1,0 +1,54 @@
+/*!
+ * Simple v0.1.0
+ * Copyright 18/12/2017 
+ * Licensed under MIT (https://github.com/rafa-thayto/simple/blob/master/LICENSE)
+ */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  vertical-align: baseline;
+  font-size: 100%; }
+
+.btn {
+  display: inline-block;
+  margin: .25rem .5rem;
+  padding: .5rem .75rem;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: 400;
+  font-size: 1rem;
+  background-color: #FAFAFA;
+  border: 1px solid transparent;
+  border-radius: .35rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.125s ease-in-out;
+  -moz-transition: all 0.125s ease-in-out;
+  -o-transition: all 0.125s ease-in-out;
+  transition: all 0.125s ease-in-out; }
+  .btn.btn-primary {
+    color: #FAFAFA;
+    background-color: #007BFF; }
+    .btn.btn-primary:active, .btn.btn-primary:focus {
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); }
+    .btn.btn-primary:hover {
+      background-color: #006fe6; }
+      .btn.btn-primary:hover:active {
+        background-color: #0062cc; }
+  .btn.btn-secundary {
+    color: #FAFAFA;
+    background-color: #7C4DFF; }
+    .btn.btn-secundary:active, .btn.btn-secundary:focus {
+      box-shadow: 0 0 0 0.2rem rgba(124, 77, 255, 0.5); }
+    .btn.btn-secundary:hover {
+      background-color: #6934ff; }
+      .btn.btn-secundary:hover:active {
+        background-color: #561aff; }
+
+/*# sourceMappingURL=simple.css.map */
