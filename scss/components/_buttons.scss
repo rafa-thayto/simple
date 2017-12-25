@@ -18,7 +18,7 @@ $white : #FAFAFA;
     border-radius: .35rem;
     @include user-select();
     @include transition(all, .125s, ease-in-out);
-
+    
     &.btn-primary {
         color: $white;
         background-color: $primary;
@@ -26,13 +26,18 @@ $white : #FAFAFA;
             box-shadow: 0 0 0 .2rem rgba($primary,.5);
         }
         &:hover {
+            &::after {
+                content: '';
+                background-color: darken($primary, 80%);
+                @include animation(button-3d,.15s, ease-in-out, 0s, 1);
+            }
             &:active {
                 background-color: darken($primary, 10%);
             }
             background-color: darken($primary, 5%);
         }
     }
-
+    
     &.btn-secundary {
         color: $white;
         background-color: $secundary;
@@ -40,6 +45,11 @@ $white : #FAFAFA;
             box-shadow: 0 0 0 .2rem rgba($secundary, .5);
         }
         &:hover {
+            &::after {
+                content: '';
+                background-color: darken($secundary, 80%);
+                @include animation(button-3d,.15s, ease-in-out, 0s, 1);
+            }
             &:active {
                 background-color: darken($secundary, 10%);
             }
@@ -48,3 +58,4 @@ $white : #FAFAFA;
     }
     
 }
+

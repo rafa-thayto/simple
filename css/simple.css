@@ -39,6 +39,13 @@
       box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5); }
     .btn.btn-primary:hover {
       background-color: #006fe6; }
+      .btn.btn-primary:hover::after {
+        content: '';
+        background-color: black;
+        -webkit-animation: button-3d 0.15s ease-in-out 0s 1 normal backwards;
+        -moz-animation: button-3d 0.15s ease-in-out 0s 1 normal backwards;
+        -o-animation: button-3d 0.15s ease-in-out 0s 1 normal backwards;
+        animation: button-3d 0.15s ease-in-out 0s 1 normal backwards; }
       .btn.btn-primary:hover:active {
         background-color: #0062cc; }
   .btn.btn-secundary {
@@ -48,7 +55,25 @@
       box-shadow: 0 0 0 0.2rem rgba(124, 77, 255, 0.5); }
     .btn.btn-secundary:hover {
       background-color: #6934ff; }
+      .btn.btn-secundary:hover::after {
+        content: '';
+        background-color: black;
+        -webkit-animation: button-3d 0.15s ease-in-out 0s 1 normal backwards;
+        -moz-animation: button-3d 0.15s ease-in-out 0s 1 normal backwards;
+        -o-animation: button-3d 0.15s ease-in-out 0s 1 normal backwards;
+        animation: button-3d 0.15s ease-in-out 0s 1 normal backwards; }
       .btn.btn-secundary:hover:active {
         background-color: #561aff; }
+
+@-webkit-keyframes button-3d {
+  0% {
+    transform: translate(-0.75rem, -0.5rem); }
+  100% {
+    transform: translate(0, 0); } }
+@keyframes button-3d {
+  0% {
+    transform: translate(-0.75rem, -0.5rem); }
+  100% {
+    transform: translate(0, 0); } }
 
 /*# sourceMappingURL=simple.css.map */

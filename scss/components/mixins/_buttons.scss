@@ -11,3 +11,10 @@
          -o-transition: $type $time $timing-function;
             transition: $type $time $timing-function;
 }
+
+@mixin animation($name: null, $duration:.5s, $timing-function:linear, $delay:0s,$iteration-count:infinite, $direction:normal, $fill-mode:backwards) {
+    -webkit-animation: $name $duration $timing-function $delay $iteration-count $direction $fill-mode;
+       -moz-animation: $name $duration $timing-function $delay $iteration-count $direction $fill-mode;
+         -o-animation: $name $duration $timing-function $delay $iteration-count $direction $fill-mode;
+            animation: $name $duration $timing-function $delay $iteration-count $direction $fill-mode;
+}
