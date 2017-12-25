@@ -2,7 +2,9 @@
 
 $primary : #007BFF;
 $secundary : #7C4DFF;
+$attention : #FF7F29;
 $white : #FAFAFA;
+$grey : #757575;
 
 
 .btn {
@@ -13,11 +15,27 @@ $white : #FAFAFA;
     text-align: center;
     font-weight: 400;
     font-size: 1rem;
-    background-color: $white;
     border: 1px solid transparent;
     border-radius: .35rem;
+    color: $grey;
+    background-color: $white;
     @include user-select();
     @include transition(all, .125s, ease-in-out);
+        &:active, &:focus {
+            box-shadow: 0 0 0 .2rem rgba($grey,.5);
+        }
+        &:hover {
+            background-color: lighten($grey, 50%);
+            box-shadow: inset 0 0 -.1rem rgba($grey,.8) ;
+            &::after {
+                content: '';
+                background-color: darken($grey, 80%);
+                @include animation(button-3d,.15s, ease-in-out, 0s, 1);
+            }
+            &:active {
+                background-color: lighten($grey, 45%);
+            }
+        }
 
     &.btn-primary {
         color: $white;
@@ -26,13 +44,18 @@ $white : #FAFAFA;
             box-shadow: 0 0 0 .2rem rgba($primary,.5);
         }
         &:hover {
+            background-color: darken($primary, 5%);
+            &::after {
+                content: '';
+                background-color: darken($primary, 80%);
+                @include animation(button-3d,.15s, ease-in-out, 0s, 1);
+            }
             &:active {
                 background-color: darken($primary, 10%);
             }
-            background-color: darken($primary, 5%);
         }
     }
-
+    
     &.btn-secundary {
         color: $white;
         background-color: $secundary;
@@ -40,11 +63,36 @@ $white : #FAFAFA;
             box-shadow: 0 0 0 .2rem rgba($secundary, .5);
         }
         &:hover {
+            background-color: darken($secundary, 5%);
+            &::after {
+                content: '';
+                background-color: darken($secundary, 80%);
+                @include animation(button-3d,.15s, ease-in-out, 0s, 1);
+            }
             &:active {
                 background-color: darken($secundary, 10%);
             }
-            background-color: darken($secundary, 5%);
+        }
+    }
+
+    &.btn-attention {
+        color: $white;
+        background-color: $attention;
+        &:active, &:focus {
+            box-shadow: 0 0 0 .2rem rgba($attention, .5);
+        }
+        &:hover {
+            background-color: darken($attention, 5%);
+            &::after {
+                content: '';
+                background-color: darken($attention, 80%);
+                @include animation(button-3d,.15s, ease-in-out, 0s, 1);
+            }
+            &:active {
+                background-color: darken($attention, 10%);
+            }
         }
     }
     
 }
+
